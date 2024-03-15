@@ -76,7 +76,7 @@ const handleLogin = (event) => {
     login.style.display = 'none'
     chat.style.display = 'flex'
 
-    ws = new WebSocket('ws://localhost:8080')
+    ws = new WebSocket('wss://chat-realtime-puo5.onrender.com')
     ws.onmessage = processMessage
 }
 
